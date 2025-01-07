@@ -70,6 +70,7 @@ poetry run python my_project/main.py "cancer research" -f results.csv
 ### **Debug Mode**
 Enable debug mode to print detailed logs:
 ```bash
+cd my_project
 poetry run python my_project/main.py "cancer research" -d
 ```
 
