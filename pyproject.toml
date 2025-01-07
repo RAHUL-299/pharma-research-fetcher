@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "my_project"
+version = "0.1.0"
+description = "A Python project to fetch research papers from PubMed"
+authors = ["Rahul Mandal <rahulsinghmandal@gmail.com>"]  
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.0"
+
+[tool.poetry.scripts]
+get-papers-list = "my_project.main:main"  # Define the entry point
