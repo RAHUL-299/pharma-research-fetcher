@@ -1,7 +1,7 @@
 # **PubMed Paper Fetcher**
 
 ## **Description**
-A Python program to fetch research papers from PubMed based on a user-specified query. The program interacts with the PubMed API to search for research papers, retrieve their details, and save the results to a CSV file for further analysis. 
+A Python program to fetch research papers from PubMed based on a user-specified query. The program interacts with the PubMed API to search for research papers, retrieve their details, and save the results to a CSV file for further analysis.
 
 It is designed to help researchers quickly access relevant publications, especially identifying papers with authors affiliated with pharmaceutical or biotech companies.
 
@@ -58,7 +58,7 @@ The `main.py` script is the entry point of the application. It:
 ### **Basic Usage**
 Run the program from the command line:
 ```bash
- poetry run get-papers-list "your query here"
+poetry run get-papers-list "your query here"
 ```
 
 ### **Saving Results**
@@ -70,14 +70,21 @@ poetry run python my_project/main.py "cancer research" -f results.csv
 ### **Debug Mode**
 Enable debug mode to print detailed logs:
 ```bash
-cd my_project
 poetry run python my_project/main.py "cancer research" -d
 ```
 
 ### **Arguments**
-- **`query`** (Positional): The PubMed search query (e.g., `"cancer research"`).
+- **`query`** (Positional): The PubMed search query (e.g., "cancer research").
 - **`-f` / `--file`** (Optional): The filename to save the results as a CSV file.
 - **`-d` / `--debug`** (Optional): Enable debug mode to print detailed logs.
+
+---
+
+## **Installation from PyPI**
+You can install this project directly from TestPyPI using the following command:
+```bash
+pip install -i https://test.pypi.org/simple/ my_project_rahulM
+```
 
 ---
 
@@ -85,7 +92,6 @@ poetry run python my_project/main.py "cancer research" -d
 ```bash
 project/
 ├── my_project_rahulM/                # Main package directory
-│   ├── __init__.py            # Marks the directory as a Python package
 │   ├── pubmed_utils.py        # Core logic for PubMed API interaction
 │   └── main.py                # Command-line interface (CLI) program
 ├── pyproject.toml             # Poetry configuration file
@@ -114,7 +120,7 @@ project/
 This project was developed with assistance from **OpenAI's GPT-4**, which helped in:
 - Refactoring code for readability and maintainability.
 - Designing robust error-handling mechanisms.
-- Helpd in creatng this README.md file with spoof reading, strcture tweaks, and word typos to make it more functonal!
+- Creating this README.md file with structure tweaks and wording suggestions.
 
 Learn more about GPT-4: [https://openai.com/gpt](https://openai.com/gpt)
 
